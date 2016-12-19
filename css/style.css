@@ -1,0 +1,32 @@
+body{
+	background-color: grey;
+}
+#lo_div{
+	height: auto;
+	width: 20%;
+	margin: 200px auto;
+}
+
+.lo_info{
+	list-style-type: none;
+	margin: auto;
+	padding: 3%;
+}
+
+ul.lo_info li
+{
+	height: auto;
+	width: auto;
+	margin: 10px 5px;
+}
+
+ul.lo_info li input
+{
+	width: 100%;
+	font-size: 16px;
+	color: #c0c0c0;
+	padding: 17px 3px;
+	border: 1px solid #606060;
+	border-radius: 5px;
+	text-align: center;
+}
