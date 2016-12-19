@@ -16,4 +16,34 @@ $().ready(function(){
 			left: '0'
 		}, 800);
 	});
+
+
+	$(".get_id").focus(function(){
+		if ($(this).val() == "请输入您的学号")
+		{
+			$(this).css({'color':'black'});
+			$(this).val("");
+		}
+	}).blur(function(){
+		 if ($(this).val() == "")
+		 {
+		 	$(this).css({'color':'#c0c0c0'});
+		 	$(this).val("请输入您的学号");
+		 }
+	});
+	$(".get_password").focus(function(){
+		if ($(this).val() == "请输入您的密码")
+		{
+			$(this).val("");
+			$(this).css({'color':'black'});
+			$(this).attr('type', 'password');
+		}
+	}).blur(function(){
+		 if ($(this).val() == "")
+		 {
+		 	$(this).css({'color':'#c0c0c0'});
+		 	$(this).attr('type', 'text');
+		 	$(this).val("请输入您的密码");
+		 }
+	});
 })
