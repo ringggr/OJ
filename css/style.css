@@ -1,16 +1,71 @@
 body{
-	background-color: grey;
+	background-color: #c0c0c0;
 }
-#lo_div{
-	height: auto;
+#container{
+	height: 222px;
 	width: 20%;
 	margin: 200px auto;
+	padding: 3%;
+	overflow: hidden;
+	border: 3px solid #e0e0e0;
+	border-radius: 5px;
+	position: relative;
+	min-width: 240px;
+	max-width: 220px;
+	min-height: 230px;
+	max-height: 350px;
+}
+#clearfix{
+	clear: both;
+}
+
+#lo_div{
+	position: absolute;
+	float: left;
+	top: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+}
+#re_div{
+	position: absolute;
+	float: left;
+	top: 0;
+	left: 100%;
+	height: auto;
+	width: 100%;
+}
+#to_re{
+	display: block;
+	width: 90px;
+	margin: 15px 15px;
+	color: white;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	float: right;
+}
+#to_re:hover{
+	color: #0f88eb;
+}
+#to_lo{
+	display: block;
+	width: 90px;
+	margin: 10px 15px;
+	color: white;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	float: left;
+}
+#to_lo:hover{
+	color: #0f88eb;
 }
 
 .lo_info{
 	list-style-type: none;
 	margin: auto;
-	padding: 3%;
+	padding: 8%;
 }
 
 ul.lo_info li
@@ -25,8 +80,26 @@ ul.lo_info li input
 	width: 100%;
 	font-size: 16px;
 	color: #c0c0c0;
-	padding: 17px 3px;
+	padding: 14px 0;
 	border: 1px solid #606060;
 	border-radius: 5px;
 	text-align: center;
+	font-family: "微软雅黑";
+}
+#submit{
+	display: block;
+	margin: 10px auto;
+	width: 80%;
+	height: 40px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: white;
+	background-color: #0f88eb;
+	border: 1px solid #0f88eb;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#submit:hover{
+	color: #0f88eb;
+	background-color: white;
 }

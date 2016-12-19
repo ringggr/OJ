@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <title>登录</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/basic.js"></script>
 </head>
 <body>
-<div id="lo_div">
-	<form method="post">
-		<ul class="lo_info">
-			<li><input type="text" name="user_id" value="请输入您的学号" class="get_id"></li>
-			<li><input type="text" name="user_password" value="请输入您的密码" class="get_password"></li>
-		</ul>
-		<input type="submit" name="submit" value="登录">
-	</form>
+<div id="container">
+	<div id="lo_div">
+		<form method="post">
+			<ul class="lo_info">
+				<li><input type="text" name="user_id" value="请输入您的学号" class="get_id"></li>
+				<li><input type="text" name="user_password" value="请输入您的密码" class="get_password"></li>
+			</ul>
+			<input type="submit" name="submit" value="登 录" id="submit">
+		</form>
+		<span id="to_re">验证身份 > </span>
+		<div id="clearfix"></div>
+	</div>
+	<div id="re_div">
+		<form method="post">
+			<ul class="lo_info">
+				<li><input type="text" name="user_id" value="请输入您的学号" class="get_id"></li>
+				<li><input type="text" name="user_password" value="请输入您的密码" class="get_password"></li>
+			</ul>
+			<input type="submit" name="submit" value="验 证" id="submit">
+		</form>
+		<span id="to_lo"> &nbsp;< 登录</span>
+		<div id="clearfix"></div>
+	</div>
+	<div id="clearfix"></div>
 </div>
 </body>
 </html>

@@ -14,7 +14,7 @@
             editor = K.create('textarea[name="content"]', {
                 allowFileManager : true
             });
-            /*K('input[name=getHtml]').click(function(e) {
+            K('input[name=getHtml]').click(function(e) {
                 alert(editor.html());
             });
             K('input[name=isEmpty]').click(function(e) {
@@ -40,7 +40,7 @@
             });
             K('input[name=clear]').click(function(e) {
                 editor.html('');
-            });*/
+            });
         });
     </script>
 </head>
@@ -48,5 +48,6 @@
 <textarea id="editor_id" name="content" style="width:700px;height:300px;">
 &lt;strong&gt;HTML内容&lt;/strong&gt;
 </textarea>
+<input type="botton" name="getHtml" >
 </body>
 </html>
