@@ -311,5 +311,8 @@ marquee{
 /*main*/
 #main{
 	float: left;
+	margin: 10px;
+	padding: 20px 3%;
+	border-left: 1px solid #cdcdcd;
 }
 /*main*/
