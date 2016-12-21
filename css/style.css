@@ -11,15 +11,15 @@ body{
 	height: 222px;
 	width: 20%;
 	margin: 200px auto;
-	padding: 3%;
+	padding: 30px;
 	overflow: hidden;
 	border: 3px solid #eee;
 	border-radius: 5px;
 	position: relative;
 	min-width: 240px;
 	max-width: 220px;
-	min-height: 230px;
-	max-height: 350px;
+	min-height: 250px;
+	max-height: 250px;
 }
 
 #clearfix{
@@ -58,7 +58,7 @@ body{
 #to_lo{
 	display: block;
 	width: 90px;
-	margin: 10px 15px;
+	margin: 15px 15px;
 	color: white;
 	font-size: 16px;
 	font-family: "微软雅黑";
@@ -72,8 +72,17 @@ body{
 .lo_info{
 	list-style-type: none;
 	margin: auto;
-	padding: 8%;
+	padding: 8% 8% 3% 8%;
 }
+
+.alert{
+	color: #dd4c6b;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
 
 ul.lo_info li
 {
@@ -111,16 +120,35 @@ ul.lo_info li input
 	background-color: white;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*about home*/
 #container{
 	width: 1000px;
 	margin: 0 auto;
+	padding: 10px 3%;
 	background-color: #fafafa;
 }
 
 /*banner*/
 #banner{
 	width: 100%;
+	border-bottom: 1px solid #cdcdcd;
 }
 
 /*logo*/
@@ -154,7 +182,7 @@ span.biggest{
 #banner_header{
 	float: right;
 	font-family: "微软雅黑";
-	margin: 30px 50px 0 0;
+	margin: 30px 10px 0 0;
 	text-align: right;
 }
 .up{
@@ -178,6 +206,23 @@ span.normal{
 /*nav*/
 .a_nav{
 	margin: 10px 0 0 0;
+	float: left;
+}
+.exit{
+	float: right;
+	margin-top: 17px;
+	height: 100%;
+	padding: 7px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+.exit a{
+	text-decoration: none;
+	color: #dd4c6b;
+}
+.exit a:hover{
+	text-decoration: underline;
+	color: #303030;
 }
 ul.a_nav_ul{
 	list-style-type: none;
@@ -193,7 +238,7 @@ ul.a_nav_ul li{
 }
 ul.a_nav_ul li a{
 	display: block;
-	width: 100px;
+	width: 80px;
 	height: 100%;
 	padding: 7px;
 	text-decoration: none;
@@ -209,7 +254,7 @@ ul.a_nav_ul li a:hover{
 ul.a_nav_ul li span{
 	cursor: default;
 	display: block;
-	width: 100px;
+	width: 80px;
 	height: 100%;
 	padding: 7px;
 	font-family: "微软雅黑";
@@ -226,12 +271,39 @@ ul.a_nav_ul li span:hover{
 	font-weight: bold;
 }
 
-
+/*content*/
+#content{
+	width: 100%;
+	margin: 20px 0 10px 0;
+	font-family: "微软雅黑";
+}
+/*content*/
 
 /*tips*/
 #tips{
 	float: left;
-	width: 25%;
+	width: 200px;
+}
+#tips h3{
+	font-family: "微软雅黑";
+	margin: 5px;
+	font-weight: normal;
+}
+#slider{
+	padding: 3px;
+	background-color: #eee;
+}
+marquee{
+	width: 100%;
+	font-family: "微软雅黑";
+	line-height: 20px;
+}
+#searcher{
+	margin: 50px 2px 10px 2px;
+}
+#searcher input{
+	max-width: 80px;
+	margin: 0 2px;
 }
 /*tips*/
 
