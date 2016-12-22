@@ -46,4 +46,13 @@ $().ready(function(){
 		 	$(this).val("请输入您的密码");
 		 }
 	});
+
+	$("#pager").pager({ pagenumber: 1, pagecount: 15, buttonClickCallback: PageClick });
 })
+
+
+
+PageClick = function(pageclickednumber) {
+    $("#pager").pager({ pagenumber: pageclickednumber, pagecount: 15, buttonClickCallback: PageClick });
+    $("#result").html("Clicked Page " + pageclickednumber);
+}
