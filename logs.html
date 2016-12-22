@@ -46,7 +46,33 @@
 	<div id="content">
 		
 			<h1>提交记录</h1>
-		
+			
+			<div id="log_search">
+				<form>
+					题目编号
+					<input type="text" name="p_id">
+					编程语言
+					<select id="setlanguage">
+						<option>--不限--</option>
+						<option>C</option>
+						<option>C++</option>
+						<option>JAVA</option>
+					</select>
+					结果
+					<select id="setresulttype">
+						<option>--不限--</option>
+						<option>完全正确</option>
+						<option>编译错误</option>
+						<option>运行超时</option>
+						<option>运行错误</option>
+						<option>答案错误</option>
+					</select>
+					<input type="submit" name="search" value="搜索">
+				</form>
+			</div>
+			<div id="clearfix"></div>
+			<div id="pager"></div>
+			<div id="clearfix"></div>
 			<table>
 				<thead>
 			        <tr>
