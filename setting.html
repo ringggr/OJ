@@ -66,22 +66,38 @@
 			<div id="clearfix"></div>
 			
 			<form>
+				<h2>验证身份以修改信息</h2>
 				<ul>
 					<li>
 						<span class="ul_left">姓名：</span>
-						<span class="ul_right" id="user_name">象牙蚌</span>
+						<input type="text" name="user_name" id="user_name">
 					</li>
 					<li>
 						<span class="ul_left">学号：</span>
-						<span class="ul_right" id="user_id">14123456</span>
+						<input type="text" name="user_id" id="user_id">
 					</li>
+					<li>
+						<span class="ul_left">原始密码：</span>
+						<input type="password" name="user_password_0" id="user_password">
+					</li>
+				</ul>
+				<hr>
+				<ul>
 					<li>
 						<span class="ul_left">昵称：</span>
-						<input type="text" name="uer_nick" id="user_nick" value="象牙蚌">
+						<input type="text" name="user_nick" id="user_nick" value="HelloXS">
 					</li>
 					<li>
-						<span class="ul_left">学号：</span>
-						<span class="ul_right">14123456</span>
+						<span class="ul_left">新密码：</span>
+						<input type="password" name="user_password_1" id="user_password_1">
+					</li>
+					<li>
+						<span class="ul_left">验证新密码：</span>
+						<input type="password" name="user_password_1" id="user_password_2">
+					</li>
+					<li>
+						<span class="ul_left">个人简介：</span>
+						<textarea rows="5">123</textarea>					
 					</li>
 				</ul>
 			</form>
