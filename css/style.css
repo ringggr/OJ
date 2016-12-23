@@ -301,7 +301,7 @@ marquee{
 #searcher{
 	margin: 50px 2px 10px 2px;
 }
-input{
+.search{
 	max-width: 80px;
 	margin: 0 2px;
 }
@@ -449,5 +449,31 @@ td a:hover{
 }
 
 /*table*/
+
+/*setting*/
+#setting{
+	width: 500px;
+	margin: 20px auto;
+}
+h2{
+	font-weight: normal;
+}
+.set_ul{
+	list-style-type: none;
+}
+ul.set_ul li{
+	margin: 10px;
+}
+span.ul_left{
+	display: block;
+	float: left;
+	width: 100px;
+	text-align: right;
+}
+ul.set_ul li input{
+
+}
+
+/*setting*/
 
 /*main*/

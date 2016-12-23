@@ -46,6 +46,22 @@ $().ready(function(){
 		 	$(this).val("请输入您的密码");
 		 }
 	});
+	
+	$(".get_password").focus(function(){
+		if ($(this).val() == "请输入您的密码")
+		{
+			$(this).val("");
+			$(this).css({'color':'black'});
+			$(this).attr('type', 'password');
+		}
+	}).blur(function(){
+		 if ($(this).val() == "")
+		 {
+		 	$(this).css({'color':'#c0c0c0'});
+		 	$(this).attr('type', 'text');
+		 	$(this).val("请输入您的密码");
+		 }
+	});
 
 	$("#pager").pager({ pagenumber: 1, pagecount: 15, buttonClickCallback: PageClick });
 })

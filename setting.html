@@ -56,7 +56,7 @@
 			<div id="searcher">
 				<form>
 					题号：
-					<input type="text" name="p_id">
+					<input type="text" name="p_id" class="search">
 					<input type="submit" name="search" value="查找">
 				</form>
 			</div>
@@ -66,40 +66,35 @@
 			<div id="clearfix"></div>
 			
 			<form>
-				<h2>验证身份以修改信息</h2>
-				<ul>
-					<li>
-						<span class="ul_left">姓名：</span>
-						<input type="text" name="user_name" id="user_name">
-					</li>
-					<li>
-						<span class="ul_left">学号：</span>
-						<input type="text" name="user_id" id="user_id">
-					</li>
-					<li>
-						<span class="ul_left">原始密码：</span>
-						<input type="password" name="user_password_0" id="user_password">
-					</li>
-				</ul>
-				<hr>
-				<ul>
-					<li>
-						<span class="ul_left">昵称：</span>
-						<input type="text" name="user_nick" id="user_nick" value="HelloXS">
-					</li>
-					<li>
-						<span class="ul_left">新密码：</span>
-						<input type="password" name="user_password_1" id="user_password_1">
-					</li>
-					<li>
-						<span class="ul_left">验证新密码：</span>
-						<input type="password" name="user_password_1" id="user_password_2">
-					</li>
-					<li>
-						<span class="ul_left">个人简介：</span>
-						<textarea rows="5">123</textarea>					
-					</li>
-				</ul>
+				<div id="setting">
+					<h2>验证身份以修改信息</h2>
+					<ul class="set_ul">
+						<li>
+							<span class="ul_left">原始密码：</span>
+							<input type="password" name="user_password_0" id="user_password">
+						</li>
+					<!-- </ul>
+					<hr>
+					<ul> -->
+						<hr>
+						<li>
+							<span class="ul_left">昵称：</span>
+							<input type="text" name="user_nick" id="user_nick" value="HelloXS">
+						</li>
+						<li>
+							<span class="ul_left">新密码：</span>
+							<input type="password" name="user_password_1" id="user_password_1">
+						</li>
+						<li>
+							<span class="ul_left">验证新密码：</span>
+							<input type="password" name="user_password_1" id="user_password_2">
+						</li>
+						<li>
+							<span class="ul_left">个人简介：</span>
+							<textarea rows="5">123</textarea>					
+						</li>
+					</ul>
+				</div>
 			</form>
 			
 		</div>
