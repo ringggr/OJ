@@ -354,7 +354,7 @@ h1{
 #pager ul.pages li {
 	float: left;
 	padding: 4px 7px;
-	text-decoration: none; /*border: 1px solid #dddddd;*/;
+	text-decoration: none; /*border: 1px solid #dddddd;*/
 	border-left-width: 0;
 	list-style: none;
 	background-color: #eee;
@@ -470,8 +470,17 @@ span.ul_left{
 	width: 100px;
 	text-align: right;
 }
-ul.set_ul li input{
-
+ul.set_ul li input, ul.set_ul li textarea{
+	color: #a0a0a0;
+}
+#set_submit{
+	width: 78px;
+	font-family: "微软雅黑";
+	font-weight: 16px;
+	padding: 7px;
+	background-color: #dd4c6b;
+	border: 1px solid #dd4c6b;
+	color: white;
 }
 
 /*setting*/

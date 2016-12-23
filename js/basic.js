@@ -46,20 +46,34 @@ $().ready(function(){
 		 	$(this).val("请输入您的密码");
 		 }
 	});
-	
-	$(".get_password").focus(function(){
-		if ($(this).val() == "请输入您的密码")
-		{
+
+	var oldname = $("#user_nick").val();
+	$("#user_nick").focus(function(){
+		/*if ($(this).val() == "请输入您的密码")
+		{*/
 			$(this).val("");
 			$(this).css({'color':'black'});
-			$(this).attr('type', 'password');
-		}
+		/*}*/
 	}).blur(function(){
 		 if ($(this).val() == "")
 		 {
 		 	$(this).css({'color':'#c0c0c0'});
-		 	$(this).attr('type', 'text');
-		 	$(this).val("请输入您的密码");
+		 	$(this).val(oldname);
+		 }
+	});
+
+	var oldtext = $("#user_text").val();
+	$("#user_text").focus(function(){
+		/*if ($(this).val() == "请输入您的密码")
+		{*/
+			$(this).val("");
+			$(this).css({'color':'black'});
+		/*}*/
+	}).blur(function(){
+		 if ($(this).val() == "")
+		 {
+		 	$(this).css({'color':'#c0c0c0'});
+		 	$(this).val(oldtext);
 		 }
 	});
 

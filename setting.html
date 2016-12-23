@@ -65,7 +65,7 @@
 			<H1>设置</H1>
 			<div id="clearfix"></div>
 			
-			<form>
+			<form method="post">
 				<div id="setting">
 					<h2>验证身份以修改信息</h2>
 					<ul class="set_ul">
@@ -91,9 +91,14 @@
 						</li>
 						<li>
 							<span class="ul_left">个人简介：</span>
-							<textarea rows="5">123</textarea>					
+							<textarea rows="5" id="user_text">123</textarea>
+						</li>
+						<li>
+							<span class="ul_left">&nbsp;</span>
+							<input type="submit" name="submit" id="set_submit" value="保存修改">
 						</li>
 					</ul>
+					
 				</div>
 			</form>
 			
