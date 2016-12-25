@@ -551,7 +551,7 @@ pre {
 	color: #303030;
 }
 #codearea{
-	/*display: none;*/
+	display: none;
 	padding: 20px 0;
 }
 #compiler_id{
