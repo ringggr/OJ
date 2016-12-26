@@ -92,3 +92,9 @@ show_codearea = function(){
 	$("#codearea_link").hide();
 	$("#codearea").show();
 }
+
+
+show_submitLog = function(e){
+	var id = "submit" + e.id;
+	$("#" + id).toggle();
+}

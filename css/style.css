@@ -387,12 +387,16 @@ table{
 	border: 1px solid #ddd;
 	background-color: #f7f7f7;
 	width: 100%;
+	font-family: "Microsoft YaHei";
 }
 thead{
 	background-color: #76bbcc;
 }
 tr{
 	display: table-row;
+}
+th{
+	font-weight: 600;
 }
 th, td{
 	padding: 6px 10px 6px 5px;
@@ -406,13 +410,13 @@ th, td{
 .center{
 	text-align: center;
 }
-tbody tr td{
+td,th{
 	max-width: 518px;
 	min-width: 35px;
 	font-size: 13px;
 	word-wrap: break-word;
 }
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) td{
 	background-color: #e5ecf9;
 }
 td a{
@@ -423,6 +427,7 @@ td a:hover{
 	text-decoration: underline;
 	color: #dd4c6b;
 }
+
 #classify{
 	width: 400px;
 	text-align: center;
@@ -447,7 +452,28 @@ td a:hover{
 #user_score{
 	width: 8%;
 }
-
+pre{
+	margin: 0;
+}
+.submitRes-0 {
+  color: #f90;
+}
+.submitRes-1 {
+  color: blue;
+}
+.submitRes-2 {
+  color: #90f;
+}
+.submitRes-3, .caseRes-3 {
+  color: red;
+}
+.submitRes-4, .submitRes-5, .submitRes-6, .submitRes-7, .submitRes-8, .submitRes-9, .submitRes-10, .submitRes-11, .submitRes-12, .submitRes-13,
+.caseRes-4, .caseRes-5, .caseRes-6, .caseRes-7, .caseRes-8, .caseRes-9, .caseRes-10, .caseRes-11, .caseRes-12, .caseRes-13 {
+  color: green;
+}
+.submitRes-14, .caseRes-14 {
+  color: #444;
+}
 /*table*/
 
 /*setting*/
